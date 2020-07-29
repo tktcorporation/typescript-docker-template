@@ -1,16 +1,17 @@
 FROM node:14.5.0 AS build-stage
 
-RUN npm i -g @nestjs/cli ts-node
-
-COPY . /app
+RUN npm i -g typescript ts-node
 
 WORKDIR /app
+COPY ./package.json ./
+COPY ./yarn.lock ./
+
 RUN yarn
+
+COPY . /app
 RUN yarn build
 
 ENTRYPOINT ["/bin/bash", "-c"]
-
-CMD ["yarn start"]
 
 FROM node:14.5.0 AS runtime-stage
 
