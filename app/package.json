@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "format": "prettier --write \"{src,test}/**/{*.ts,*.tsx,*.js,*.jsx}\"",
     "format:check": "prettier --check \"{src,test}/**/{*.ts,*.tsx,*.js,*.jsx}\"",
     "lint": "eslint \"{src,apps,libs,test}/**/{*.ts,*.tsx,*.js,*.jsx}\"",
