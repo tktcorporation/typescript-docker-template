@@ -1,6 +1,31 @@
+[![TypeScript version][ts-badge]][typescript-39]
+[![Node.js version][nodejs-badge]][nodejs]
+[![APLv2][license-badge]][LICENSE]
+[![Build Status - Travis][travis-badge]][travis-ci]
+[![Build Status - GitHub Actions][gha-badge]][gha-ci]
+
 # typescript-base
 
 For creating a Typescript repository.
+
+<!-- TOC -->
+
+- [typescript-base](#typescript-base)
+    - [Tools](#tools)
+        - [Lint](#lint)
+        - [Format](#format)
+        - [Test](#test)
+        - [Build](#build)
+    - [Get Started](#get-started)
+        - [Building Docker](#building-docker)
+        - [Working in Docker container](#working-in-docker-container)
+        - [Installation](#installation)
+        - [Lint](#lint)
+        - [Format](#format)
+        - [Test](#test)
+        - [Build](#build)
+
+<!-- /TOC -->
 
 ## Tools
 
