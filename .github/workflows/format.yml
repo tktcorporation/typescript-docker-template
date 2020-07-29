@@ -39,24 +39,10 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - name: Cache docker
-        uses: actions/cache@v2
-        id: cache-docker
-        env:
-          cache-name: cache-docker
-        with:
-          path: /var/lib/docker/
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/Dockerfile') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
       - name: cache check
         run: |
-          echo "-->${{steps.cache-node-modules.outputs.cache-hit}}<--"
-          echo "-->${{steps.cache-npm.outputs.cache-hit}}<--"
-          echo "-->${{steps.cache-docker.outputs.cache-hit}}<--"
+          echo "node-modules -->${{steps.cache-node-modules.outputs.cache-hit}}<--"
+          echo "npm -->${{steps.cache-npm.outputs.cache-hit}}<--"
 
       - name: Build containers
         run: docker-compose build
