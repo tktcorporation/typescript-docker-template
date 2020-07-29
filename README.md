@@ -1,8 +1,4 @@
-[![TypeScript version][ts-badge]][typescript-39]
-[![Node.js version][nodejs-badge]][nodejs]
-[![APLv2][license-badge]][LICENSE]
-[![Build Status - Travis][travis-badge]][travis-ci]
-[![Build Status - GitHub Actions][gha-badge]][gha-ci]
+[![Test](https://github.com/tktcorporation/typescript-docker-template/workflows/Test/badge.svg)](https://github.com/tktcorporation/typescript-docker-template/actions?query=workflow%3Atest)
 
 # typescript-base
 
