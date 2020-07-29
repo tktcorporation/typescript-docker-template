@@ -52,6 +52,12 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
+      - name: cache check
+        run: |
+          echo "-->${{steps.cache-node-modules.outputs.cache-hit}}<--"
+          echo "-->${{steps.cache-npm.outputs.cache-hit}}<--"
+          echo "-->${{steps.cache-docker.outputs.cache-hit}}<--"
+
       - name: Build containers
         run: docker-compose build
 
