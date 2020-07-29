@@ -1,7 +1,10 @@
-version: "3"
+version: "3.7"
 services:
   app:
-    build: .
+    build:
+      context: ./app
+      dockerfile: ./Dockerfile
+      target: build-stage
     container_name: app
     working_dir: /app
     volumes:
