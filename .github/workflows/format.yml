@@ -31,4 +31,4 @@ jobs:
         run: docker-compose run --rm app /bin/bash -c "yarn"
 
       - name: Format
-        run: docker-compose run --rm app /bin/bash -c "yarn && yarn format:check"
+        run: docker-compose run --rm app /bin/bash -c "yarn format:check"
