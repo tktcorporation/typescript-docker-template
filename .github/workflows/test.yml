@@ -34,4 +34,4 @@ jobs:
         run: docker-compose run --rm app /bin/bash -c "yarn"
 
       - name: Test
-        run: docker-compose run --rm app /bin/bash -c "yarn && yarn test"
+        run: docker-compose run --rm app /bin/bash -c "yarn test"
